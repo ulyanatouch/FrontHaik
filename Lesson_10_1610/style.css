@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    row-gap: 20px;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.card {
+    border: 1px solid #000000;
+    padding: 10px;
+    margin: 10px;
+    /* background-color: #9db192; */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+button.delete-button {
+    background-color: #1c1a1a; 
+    color: #fff; 
+    border: none; 
+    padding: 5px 10px; /* Отступы вокруг текста */
+    border-radius: 5px; /* Закругляем углы */
+    cursor: pointer; /* Изменяем курсор при наведении */
+    transition: background-color 0.3s; /* Плавное изменение цвета фона при наведении */
+    margin-top: 10px;
+}
+
+button.delete-button:hover {
+    background-color: #ff8f1e;
+    color: #000000; 
+    border: 1px solid black;
+}
