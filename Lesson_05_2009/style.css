@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    background: #F4F9E2
+}
+
+nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav .links {
+    display: flex;
+    gap: 50px;
+}
+
+nav .feedback {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    background: #F9B640;
+    border: none;
+    color: white;
+}
