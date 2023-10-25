@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    border:2px solid #000000;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+nav .links {
+    display: flex;
+    gap: 10px;
+}
+
+nav .connect {
+    width: 175px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    width: 445px;
+    height: 23px;
+    flex-shrink: 0;
+    color: var(--bdbdbd, #BDBDBD);
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 138%;
+}
+
+#services {
+    margin: 40px auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#services > div {
+    border: 2px solid black;
+    width: 350px;
+    height: 360px;
+    background-image: url("./Rectangle\ 2.png");
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+
+}
+
+#services > div.new::after{
+    content: attr(data-sticker);
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    background-color: rgb(244, 123, 123);
+    padding: 5px 10px;
+    transform: translate(50%,-50%);
+    transition: background-color 0.5s;
+}
+#services > div button {
+    text-transform: uppercase;
+    width: 175px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid #FFF;
+    background-color: transparent;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+    transition: background-color, color;
+}
+
+#services > div button:hover {
+    background-color: rgb(248, 248, 248);
+    color: black;
+    transform: scale(1.1);
+}
+
+#services > div:hover button {
+    transform: scale(1.1);
+}
+
+
+#services > div.new::after{
+    content: attr(data-sticker);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(244, 123, 123);
+    font-size: 20px;
+    padding: 5px 10px;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.5s;
+}
+
+#services > div[data-sticker]:hover::after{
+    background-color: rgb(192, 77, 77);
+}
+
+#feedback form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#feedback form .user_data{
+    display: flex;
+    justify-content: space-between;
+}
+
+#feedback form .user_data input{
+    width: 40%;
+}
+#feedback form input,
+#feedback form textarea,
+#feedback button{
+    padding: 10px;
+    border: 2px solid black;
+}
+
+#feedback form textarea{
+    min-height: 150px;
+    resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
